@@ -1,8 +1,6 @@
 INSERT into points(no_of_wins,team_name) select count(*),team_won from fixtures group by team_won having count(*)>8;
 INSERT into points(no_of_wins,team_name) select count(*),team_lost from fixtures group by team_loss ORDER BY DESC LIMIT 1;
-
-
-
+select * from helloworld;
 select team_lost from fixtures where venue = 'Kolkata';
 select * from fixtures;
 select max()
